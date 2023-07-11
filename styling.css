@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.red{
+    background-color: violet;
+    color: white;
+}
+
+.green{
+    background-color: teal;
+    color: white;
+}

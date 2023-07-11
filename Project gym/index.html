@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <style>
+        body {
+            background: url("img/hill-6403007_1920.jpg");
+            background-repeat: no-repeat;
+            height: 700px;
+        }
+
+        .position_image img {
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        .header {
+            display: inline-block;
+            width: 1059px;
+            background-color: rgb(197, 151, 151);
+        }
+
+        .logo img {
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            height: 55px;
+            width: 80px;
+        }
+
+        h2 {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 95px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(253, 252, 252);
+            text-decoration: underline;
+        }
+
+        .header ul {
+            position: absolute;
+            float: right;
+            width: 531px;
+            top: 25px;
+            right: 5px;
+
+
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .list li {
+
+            display: inline-block;
+            width: 13%;
+            padding: 0px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .list li a:hover {
+            color: rgb(89, 64, 187);
+        }
+
+        .active {
+            background-color: rgb(12, 14, 14);
+            border: 2px solid black;
+        }
+
+        .container {
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+        .name p {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .position_image {
+            position: absolute;
+            width: 100%;
+
+        }
+
+        .position_image div {
+            width: 301px;
+            display: inline-block;
+            height: 300px;
+            margin: 3px 17px;
+            padding: 6px;
+            overflow: hidden;
+        }
+
+        .position_image p {
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(249, 249, 251);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/download-building-hotel-clipart-png-33.png" alt="">
+        </div>
+        <div class="hotelName">
+            <h2>Hotel Naaz</h2>
+        </div>
+        <div>
+            <ul class="list">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class=""><a href="service.html">Services</a></li>
+                <li class=""><a href="#">Booking</a></li>
+                <li class=""><a href="#">Rooms</a></li>
+                <li class=""><a href="#">Contact</a></li>
+                <li class=""><a href="#">Map</a></li>
+        </div>
+        </ul>
+    </header>
+
+    <div class="position_image">
+        <div class="">
+            <p>AC Room</p>
+            <a href="https://google.com"><img src="img/Room.com (1).png" alt=""></a>
+
+        </div>
+        <div>
+            <p>Non Room</p>
+            <a href="https://google.com"> <img src="img/mark-champs-Id2IIl1jOB0-unsplash.jpg" alt=""></a>
+        </div>
+        <div>
+            <p>Luxury Room</p>
+            <a href="https://google.com"> <img src="img/adam-winger-VGs8z60yT2c-unsplash.jpg" alt=""></a>
+           
+        </div>
+    </div>
+
+</body>
+
+</html>
