@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 100%;
+            border: 2px solid hsl(0, 0%, 0%);
+            display: flex;                      /*flex default value is row side*/
+        /*flex properties for Container*/
+             /*flex-direction: column;
+               flex-direction: row-reverse;
+               flex-direction: column-reverse;
+               flex-direction: column; */
+             /* flex-wrap: wrap;  */            /*default is noWrap*/
+               /*flex-flow: row wrap; */                   
+        /*-----isme dono hai flex-direction and flex wrap bhi */
+        /*--short  hand kah skte hai*/
+
+        /*isme justify me hum centre left right b kr skte hai,ar gap bhi de skte hai bw elements*/                                                     
+              /*justify-content: center;
+                justify-content: space-evenly;
+                justify-content: space-between;*/
+                justify-content: space-around; 
+                align-items: center;
+                align-items: flex-end;
+                align-items: flex-start;
+                align-items: stretch; 
+            /*verticall space equal rakhta hai agr height kum kre to item k */
+        }
+           
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 7px;
+            padding: 2px;
+
+        }
+        #item1{
+             /*flex prop for flex -element*/
+
+             /* Jiska order jyda hoga wo baad be hoga right side --1<2<3*/
+             /* order: 1; */
+             align-self: flex-start;
+        }
+        #item2{
+            
+            /*flex grow bhi similarly jo no jyda hoga wo jyda jaldi  failega*--1<2<3/
+            /* flex-grow: 2; */
+            align-self: center;
+        }
+        #item3{
+
+            /*similar hai jisko jyda number wo jaldi shrink hoga*--1<2<3/
+            /* flex-shrink: 3; */
+
+            /*Agr flex-dir Row hai to width Agr flex-dirction colomn hai to height control me rhta hai */
+            /*jaise yha row hai to width wise expand krega*/
+            /* flex-basis: 320px; */
+
+            /*short hand*/
+            /* flex: 0 0 150px;        ---------grow-shrink-basis------ */
+            align-self: flex-end;  /*element ko shift krna hai to use kro*/
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is flex tutorial</h3>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Forth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+</html>
