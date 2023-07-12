@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS advance Selector</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        /*direct <div> ke bad <p> hai to hoga mention hai baki koi ar <p> ni hoga*/
+        /* div > p{            
+            color: yellow;
+            background-color: rgb(14, 61, 13);
+            font-weight: bold;
+        } */
+        /*jisk pichla sibling jo <div> ho*/
+        div +p{
+            color: yellow;
+            background-color: rgb(14, 61, 13);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is no more selctor</h1>
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>This is pragraph li</p>
+            </li>
+            <p>this is demo</p>
+        </ul>
+        <p>This is a pragraph</p>
+    </div>
+    <p>This is another pragraph</p>
+    <div>
+        <p>this is outerpragraph</p>
+    </div>
+</body>
+</html>
